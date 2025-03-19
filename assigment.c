@@ -1,4 +1,5 @@
-/* 1. #include <stdio.h>
+1.
+#include <stdio.h>
 void main()
 {
     int n, i = 0, num, sum = 0;
@@ -12,6 +13,7 @@ void main()
     }
     printf("sum:%d\n", sum);
 }
+
 2.
 #include <stdio.h>
 void main()
@@ -25,6 +27,7 @@ void main()
     }
     printf("sum of all numbers from 1 to %d is %d", n, sum);
 }
+
 3.
 #include <stdio.h>
 void main()
