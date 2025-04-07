@@ -1,4 +1,4 @@
-/*#include <stdio.h>
+#include <stdio.h>
 
 float calculateSimpleInterest(float p, float r, float t)
 {
@@ -34,17 +34,17 @@ int main()
     double a;
     int n;
 
-    // Taking user input
+    
     printf("Enter the base (a): ");
     scanf("%lf", &a);
 
     printf("Enter the exponent (n): ");
     scanf("%d", &n);
 
-    // Calculating power
+
     double result = power(a, n);
 
-    // Displaying result
+    
     printf("\n%.2lf to the power of %d is: %.2lf\n", a, n, result);
 
     return 0;
@@ -52,10 +52,10 @@ int main()
 
 #include <stdio.h>
 
-// Function to multiply two numbers without using * operator
+
 int multiply(int a, int b) {
     int result = 0;
-    int negative = (a < 0) ^ (b < 0); // Check if result should be negative
+    int negative = (a < 0) ^ (b < 0); 
 
     a = a < 0 ? -a : a;
     b = b < 0 ? -b : b;
@@ -92,29 +92,29 @@ int main() {
 
 #include <stdio.h>
 
-// Function to divide two numbers and return the quotient
+
 int divide(int a, int b) {
     if (b == 0) {
         printf("Error: Division by zero is not allowed.\n");
         return 0;
     }
-    return a / b; // Using integer division
+    return a / b; 
 }
 
 int main() {
     int a, b;
 
-    // Taking user input
+   
     printf("Enter dividend (a): ");
     scanf("%d", &a);
 
     printf("Enter divisor (b): ");
     scanf("%d", &b);
 
-    // Calculating quotient
+    
     int quotient = divide(a, b);
 
-    // Displaying result
+   
     printf("\nQuotient of %d divided by %d is: %d\n", a, b, quotient);
 
     return 0;
@@ -154,7 +154,7 @@ int main() {
 
 #include <stdio.h>
 
-// Function to print multiplication table
+
 void printMultiplicationTable(int num) {
     printf("Multiplication table of %d:\n", num);
     for (int i = 1; i <= 10; i++) {
@@ -281,7 +281,7 @@ int remainder(int a, int b) {
 int main() {
     int num1, num2, result, choice;
 
-    // Input two numbers
+    
     printf("Enter two numbers: ");
     scanf("%d %d", &num1, &num2);
 
@@ -295,7 +295,7 @@ int main() {
     printf("Enter your choice (1/2/3/4/5): ");
     scanf("%d", &choice);
 
-    // Perform operation based on user input
+   
     switch(choice) {
         case 1:
             result = add(num1, num2);
@@ -333,23 +333,21 @@ int main() {
 
 #include <stdio.h>
 
-// Function to check if a year is a leap year
 int isLeapYear(int year) {
-    // A leap year is divisible by 4 but not by 100, except when it's divisible by 400
     if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)) {
         return 1;  // Leap year
     }
-    return 0;  // Not a leap year
+    return 0;  
 }
 
 int main() {
     int year;
 
-    // Input year from user
+    
     printf("Enter a year: ");
     scanf("%d", &year);
 
-    // Check if the year is a leap year and print the result
+    
     if (isLeapYear(year)) {
         printf("%d is a leap year.\n", year);
     } else {
@@ -362,38 +360,38 @@ int main() {
 
 #include <stdio.h>
 
-// Function to calculate the number of days in a given month and year
+
 int getDaysInMonth(int month, int year) {
     // Check for invalid month input
     if (month < 1 || month > 12) {
         return -1;  // Invalid month
     }
 
-    // Days in months for common years (non-leap years)
+    
     int daysInMonth[] = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
 
-    // Check if it's a leap year for February
+    
     if (month == 2 && ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0))) {
         return 29;  // February in a leap year has 29 days
     }
 
-    // Return the number of days for the given month
+    
     return daysInMonth[month - 1];
 }
 
 int main() {
     int month, year, days;
 
-    // Input month and year from user
+    
     printf("Enter the month (1-12): ");
     scanf("%d", &month);
     printf("Enter the year: ");
     scanf("%d", &year);
 
-    // Get the number of days in the month
+    
     days = getDaysInMonth(month, year);
 
-    // Check if the month is valid and print the result
+    
     if (days == -1) {
         printf("Invalid month input.\n");
     } else {
@@ -406,25 +404,25 @@ int main() {
 
 #include <stdio.h>
 
-// Function to swap two integers and print their new values
+
 void swap(int a, int b) {
     // Swapping the values using a temporary variable
     int temp = a;
     a = b;
     b = temp;
 
-    // Printing the swapped values
+   
     printf("After swapping: a = %d, b = %d\n", a, b);
 }
 
 int main() {
     int num1, num2;
 
-    // Input two integers from the user
+
     printf("Enter two integers: ");
     scanf("%d %d", &num1, &num2);
 
-    // Call the swap function to swap the values
+    
     swap(num1, num2);
 
     return 0;
