@@ -1,4 +1,4 @@
-/*1.
+1.
 #include <stdio.h>
 void main()
 {
@@ -17,12 +17,11 @@ void main()
 
 int main()
 {
-    int rows = 5, i, j; // Total number of rows in the pattern
-
-    // Loop to print the entire pattern
+    int rows = 5, i, j; 
+   
     for (int i = 0; i < rows; i++)
     {
-        // Print leading spaces
+        
         if (i == 1)
         {
             for (j = 0; j < 1; j++)
