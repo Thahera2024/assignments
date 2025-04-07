@@ -1,4 +1,4 @@
-/*#include <stdio.h>
+#include <stdio.h>
 
 int searchElement(int arr[], int size, int target)
 {
@@ -85,12 +85,12 @@ void reverseArray(int arr[], int size)
     int start = 0, end = size - 1;
     while (start < end)
     {
-        // Swap elements at start and end
+        
         int temp = arr[start];
         arr[start] = arr[end];
         arr[end] = temp;
 
-        // Move towards the middle
+        
         start++;
         end--;
     }
@@ -127,7 +127,7 @@ int main()
 
 void printBinary(int num)
 {
-    int binary[32]; // Array to store binary digits (for a 32-bit integer)
+    int binary[32]; 
     int index = 0;
 
     if (num == 0)
@@ -170,7 +170,7 @@ void swapAndReverseArrays(int arr1[], int arr2[], int size)
 {
     for (int i = 0; i < size; i++)
     {
-        // Swap and reverse simultaneously
+       
         int temp = arr1[i];
         arr1[i] = arr2[size - 1 - i];
         arr2[size - 1 - i] = temp;
@@ -259,7 +259,7 @@ void convertNegativesToPositive(int arr[], int size)
     {
         if (arr[i] < 0)
         {
-            arr[i] = -arr[i]; // Convert negative to positive
+            arr[i] = -arr[i]; 
         }
     }
 }
@@ -296,15 +296,15 @@ int main()
 
 int areArraysEqual(int arr1[], int arr2[], int size1, int size2) {
     if (size1 != size2) {
-        return 0; // Arrays are not equal if sizes are different
+        return 0; 
     }
 
     for (int i = 0; i < size1; i++) {
         if (arr1[i] != arr2[i]) {
-            return 0; // Arrays are not equal if any element differs
+            return 0; 
         }
     }
-    return 1; // Arrays are equal
+    return 1; 
 }
 
 int main() {
